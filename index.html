@@ -5,6 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>For You</title>
     <style>
+        .heart-border-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heart-border-top,
+.heart-border-bottom {
+    font-size: 24px;
+    text-align: center;
+}
+
+.heart-border-left,
+.heart-border-right {
+    font-size: 24px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: #ff69b4;
+    margin: 0 10px;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.image-container img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 182, 193, 0.8);
+}
+
         body {
             background-color: #ffc0cb; /* Light pink background */
             color: white; /* White text */
@@ -19,11 +55,11 @@
             padding: 20px;
         }
         img {
-            width: 50%;
+            width: 30%;
             border-radius: 10px;
         }
         p {
-            font-size: 18px;
+            font-size: 20px;
             line-height: 1.6;
         }
         .spotify-link {
@@ -43,10 +79,34 @@
     </style>
 </head>
 <body>
+    <div class="heart-border-container">
+        <!-- Top Heart Border -->
+        <div class="heart-border-top">
+            🩷🤍🩷🤍🩷🤍🩷🤍🩷🤍🩷🤍🩷🤍🩷🤍
+        </div>
+    
+        <!-- Left & Right Heart Border with Image -->
+        <div class="image-container">
+            <div class="heart-border-left">
+                🤍🩷🤍🩷🤍🩷🤍🩷🤍🩷🤍🩷
+            </div>
+    
+            <img src="frank.jpg" alt="Pink + White - Frank Ocean">
+    
+            <div class="heart-border-right">
+                🤍🩷🤍🩷🤍🩷🤍🩷🤍🩷🤍🩷
+            </div>
+        </div>
+    
+        <!-- Bottom Heart Border -->
+        <div class="heart-border-bottom">
+            🩷🤍🩷🤍🩷🤍🩷🤍🩷🤍🩷🤍🩷🤍🩷🤍
+        </div>
+    </div>
+    
 
     <div class="container">
         <!-- Song Image -->
-        <img src="frank.jpg" alt="Pink + White - Frank Ocean">
         
         <!-- Message -->
         <p><strong>"You showed me love"</strong> in a way I didn’t always know how to receive, but I see it now, and I want you to know that I will never take that for granted again.</p>
